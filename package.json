@@ -1,0 +1,33 @@
+{
+  "name": "miniblog-api",
+  "version": "1.0.0",
+  "description": "API REST MiniBlog para el Proyecto Integrador M2.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "db:setup": "node scripts/run-sql.js src/db/setup.sql"
+  },
+  "keywords": [
+    "express",
+    "postgresql",
+    "api",
+    "miniblog"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.2.1",
+    "pg": "^8.20.0",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.1.6",
+    "supertest": "^7.2.2",
+    "vitest": "^4.1.6"
+  }
+}
